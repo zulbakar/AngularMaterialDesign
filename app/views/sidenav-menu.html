@@ -1,0 +1,66 @@
+<div ng-controller="SidenavMenuCtrl as $ctrl">
+
+    <md-sidenav class="md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
+
+        <md-toolbar md-theme="altTheme" class="md-primary md-whiteframe-1dp" style="background: center right url('./app/images/side-menu-nav.jpg');">
+            <md-list>
+                <md-list-item class="md-2-line" role="listitem">
+                    <img ng-src="./app/images/yeoman.png" class="md-avatar md-whiteframe-3dp" alt="Min Li Chan" src="./app/images/azizul.baka2r.jpg">
+                    <div class="md-list-item-text">
+                        <h4 style="color: #ffffff;">Joe Zul</h4>
+                        <p style="color: #ffffff;">joe.zul@gmail.com</p>
+                    </div>
+                    <div class="md-secondary-container">
+                        <md-button ng-click="$ctrl.close()" class="md-icon-button" aria-label="close sidenav" hide-gt-md>
+                            <md-icon md-menu-origin md-font-library="material-icons">close</md-icon>
+                        </md-button>
+                    </div>
+                </md-list-item>
+            </md-list>
+
+        </md-toolbar>
+
+        <md-content layout-padding class="sidemenu-custom">
+
+            <md-sidemenu locked="true" md-theme="altTheme">
+                <md-sidemenu-group>
+                    <md-subheader class="md-no-sticky">Caption</md-subheader>
+
+                    <md-sidemenu-content md-icon="home" md-heading="Dashboard" md-arrow="true">
+                        <md-button class="md-raised" ng-click="$ctrl.go('/input')" ng-class="{'{{$ctrl.classActive}}':$ctrl.$location.path() === '/'}">Home</md-button>
+                        <md-button class="md-raised" ng-click="$ctrl.go('/about')" ng-class="{'{{$ctrl.classActive}}':$ctrl.$location.path() === '/about'}">About</md-button>
+                    </md-sidemenu-content>
+
+                    <md-sidemenu-content md-heading="Menu 2" md-arrow="true">
+                        <md-sidemenu-button href="#">Submenu 1</md-sidemenu-button>
+                        <md-sidemenu-button href="#">Submenu 2</md-sidemenu-button>
+                        <md-sidemenu-button href="#">Submenu 3</md-sidemenu-button>
+                    </md-sidemenu-content>
+
+                    <md-sidemenu-content md-heading="Menu 3" md-arrow="true">
+                        <md-sidemenu-button href="#">Submenu 1</md-sidemenu-button>
+                        <md-sidemenu-button href="#">Submenu 2</md-sidemenu-button>
+                        <md-sidemenu-button href="#">Submenu 3</md-sidemenu-button>
+                    </md-sidemenu-content>
+                </md-sidemenu-group>
+
+                <md-sidemenu-group>
+                    <md-divider></md-divider>
+
+                    <md-subheader class="md-no-sticky">Caption</md-subheader>
+
+                    <md-sidemenu-button href="#">Menu 4</md-sidemenu-button>
+                </md-sidemenu-group>
+
+                <md-sidemenu-group>
+                    <md-divider></md-divider>
+
+                    <md-subheader class="md-no-sticky">Caption</md-subheader>
+                    <md-sidemenu-button href="#">Menu 5</md-sidemenu-button>
+                    <md-sidemenu-button href="#">Menu 6</md-sidemenu-button>
+                </md-sidemenu-group>
+            </md-sidemenu>
+        </md-content>
+    </md-sidenav>
+
+</div>

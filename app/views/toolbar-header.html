@@ -1,0 +1,40 @@
+<div ng-controller="ToolbarHeaderCtrl as $ctrl">
+
+<md-toolbar md-theme="altTheme" class="md-primary md-whiteframe-3dp">
+    <div class="md-toolbar-tools">
+        <md-button class="md-icon-button" aria-label="Settings" ng-disabled="false" ng-click="toggleLeft()"
+                   hide-gt-md md-is-locked-open="$mdMedia('gt-md')">
+            <md-icon md-font-library="material-icons" >menu</md-icon>
+        </md-button>
+        <h2 flex md-truncate>Angular Material Boilerplate</h2>
+
+        <md-menu>
+            <md-button ng-click="$mdMenu.open($event)" class="md-icon-button"  aria-label="Open some menu">
+                <md-icon md-menu-origin md-font-library="material-icons">more_vert</md-icon>
+            </md-button>
+            <md-menu-content>
+                <md-menu-item>
+                    <md-button ng-click="doSomething()" aria-label="Do something">
+                        <md-icon md-menu-origin md-font-library="material-icons">account_box</md-icon>
+                        Profile
+                    </md-button>
+                </md-menu-item>
+                <md-menu-item>
+                    <md-button ng-click="doSomething()" aria-label="Setting">
+                        <md-icon md-menu-origin md-font-library="material-icons" >settings</md-icon>
+                        Setting
+                    </md-button>
+                </md-menu-item>
+                <md-divider></md-divider>
+                <md-menu-item>
+                    <md-button ng-click="doSomething()" aria-label="Log Keluar">
+                        <md-icon md-menu-origin md-font-library="material-icons">exit_to_app</md-icon>
+                        Log Keluar
+                    </md-button>
+                </md-menu-item>
+            </md-menu-content>
+        </md-menu>
+        </div>
+</md-toolbar>
+
+</div>

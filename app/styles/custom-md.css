@@ -44,7 +44,6 @@
         width: 100%;
     }
     .content-custom {
-        background-color: rgba(0,0,0,0.1); 
         padding: 3.0vh 2.0vw 3.0vh 2.0vw;
     }
 }
@@ -56,7 +55,6 @@
         width: 100%;
     }
     .content-custom {
-        background-color: rgba(0,0,0,0.1); 
         padding: 3.0vh 1.0vw 3.0vh 1.5vw;
     }
 }

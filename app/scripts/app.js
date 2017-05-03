@@ -22,14 +22,13 @@ angular
   .config(function ($routeProvider, $locationProvider, $mdThemingProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
+        templateUrl: 'views/main.html'
       })
       .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
+        templateUrl: 'views/about.html'
+      })
+      .when('/form', {
+        templateUrl: 'views/forminput.html'
       })
       .otherwise({
         redirectTo: '/'
@@ -37,23 +36,23 @@ angular
 
     $locationProvider.hashPrefix('');
 
-    var neonRedMap = $mdThemingProvider.extendPalette('blue', {
+    var primaryColorMap = $mdThemingProvider.extendPalette('blue', {
       '500': '#0288d1'
     });
 
     // Register the new color palette map with the name <code>neonRed</code>
-    $mdThemingProvider.definePalette('neonRed', neonRedMap);
+    $mdThemingProvider.definePalette('primaryColorMap', primaryColorMap);
 
-    var accentsneonRedMap = $mdThemingProvider.extendPalette('pink', {
+    var accentsColorMap = $mdThemingProvider.extendPalette('pink', {
       'A200': '#e91e63'
     });
 
     // Register the new color palette map with the name <code>neonRed</code>
-    $mdThemingProvider.definePalette('accentsNeonRed', accentsneonRedMap);
+    $mdThemingProvider.definePalette('accentsColorMap', accentsColorMap);
 
     $mdThemingProvider.setDefaultTheme('altTheme');
 
     $mdThemingProvider.theme('altTheme')
-      .primaryPalette('neonRed')
-      .accentPalette('accentsNeonRed');
+      .primaryPalette('primaryColorMap')
+      .accentPalette('accentsColorMap');
   });

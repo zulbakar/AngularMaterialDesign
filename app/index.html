@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
+    <title>Angular Material Boilerplate</title>
+    <meta name="description" content="Angular Material Boilerplate">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
@@ -31,7 +31,7 @@
     <section layout="row" flex>
         <div ng-include="'views/sidenav-menu.html'"></div>
 
-        <md-content flex layout-padding ng-view="" class="content-custom">
+        <md-content flex layout-padding ng-view="" class="content-custom" style="background-color: lightgrey;">
 
         </md-content>
 
@@ -75,6 +75,7 @@
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/toolbar-header.js"></script>
         <script src="scripts/controllers/sidenav-menu.js"></script>
+        <script src="scripts/controllers/forminput.js"></script>
         <!-- endbuild -->
 </body>
 </html>

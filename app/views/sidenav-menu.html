@@ -2,13 +2,13 @@
 
     <md-sidenav class="md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
 
-        <md-toolbar md-theme="altTheme" class="md-primary md-whiteframe-1dp" style="background: center right url('./app/images/side-menu-nav.jpg');">
+        <md-toolbar class="md-primary md-whiteframe-1dp" style="background: center right url('./app/images/side-menu-nav.jpg');">
             <md-list>
                 <md-list-item class="md-2-line" role="listitem">
-                    <img ng-src="./app/images/yeoman.png" class="md-avatar md-whiteframe-3dp" alt="Min Li Chan" src="./app/images/azizul.baka2r.jpg">
+                    <img ng-src="./app/images/user.png" class="md-avatar md-whiteframe-3dp" alt="Zulclunk">
                     <div class="md-list-item-text">
-                        <h4 style="color: #ffffff;">Joe Zul</h4>
-                        <p style="color: #ffffff;">joe.zul@gmail.com</p>
+                        <h4 style="color: #ffffff;">Zulclunk</h4>
+                        <p style="color: #ffffff;">Zulclunk88@gmail.com</p>
                     </div>
                     <div class="md-secondary-container">
                         <md-button ng-click="$ctrl.close()" class="md-icon-button" aria-label="close sidenav" hide-gt-md>
@@ -22,12 +22,13 @@
 
         <md-content layout-padding class="sidemenu-custom">
 
-            <md-sidemenu locked="true" md-theme="altTheme">
+            <md-sidemenu locked="true">
                 <md-sidemenu-group>
                     <md-subheader class="md-no-sticky">Caption</md-subheader>
 
                     <md-sidemenu-content md-icon="home" md-heading="Dashboard" md-arrow="true">
                         <md-button class="md-raised" ng-click="$ctrl.go('/input')" ng-class="{'{{$ctrl.classActive}}':$ctrl.$location.path() === '/'}">Home</md-button>
+                        <md-button class="md-raised" ng-click="$ctrl.go('/form')" ng-class="{'{{$ctrl.classActive}}':$ctrl.$location.path() === '/form'}">Form</md-button>
                         <md-button class="md-raised" ng-click="$ctrl.go('/about')" ng-class="{'{{$ctrl.classActive}}':$ctrl.$location.path() === '/about'}">About</md-button>
                     </md-sidemenu-content>
 

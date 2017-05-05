@@ -10,14 +10,16 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+    <link rel="stylesheet" href="bower_components/angular-material-sidemenu/dest/angular-material-sidemenu.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="bower_components/angular-material-sidemenu/dest/angular-material-sidemenu.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/custom-md.css">
     <!-- endbuild -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   </head>
   <body ng-app="angularMaterialBoilerplateApp">
     <!--[if lte IE 8]>
@@ -31,7 +33,7 @@
     <section layout="row" flex>
         <div ng-include="'views/sidenav-menu.html'"></div>
 
-        <md-content flex layout-padding ng-view="" class="content-custom" style="background-color: lightgrey;">
+        <md-content flex layout-padding ng-view="" class="content-custom" style="background-color: rgb(238, 238, 238);">
 
         </md-content>
 

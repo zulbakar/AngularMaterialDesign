@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
     <link rel="stylesheet" href="bower_components/angular-material-sidemenu/dest/angular-material-sidemenu.css" />
+    <link rel="stylesheet" href="bower_components/perfect-scrollbar/css/perfect-scrollbar.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -31,9 +32,9 @@
     <div ng-include="'views/toolbar-header.html'"></div>
 
     <section layout="row" flex>
-        <div ng-include="'views/sidenav-menu.html'"></div>
+        <div ng-include="'views/sidenav-menu.html'" class="md-whiteframe-3dp"></div>
 
-        <md-content flex layout-padding ng-view="" class="content-custom" style="background-color: rgb(238, 238, 238);">
+        <md-content flex layout-padding ng-view="" class="content-custom" style="background-color: rgba(238, 238, 238,0.5);">
 
         </md-content>
 
@@ -68,6 +69,8 @@
     <script src="bower_components/angular-aria/angular-aria.js"></script>
     <script src="bower_components/angular-material/angular-material.js"></script>
     <script src="bower_components/angular-material-sidemenu/dest/angular-material-sidemenu.js"></script>
+    <script src="bower_components/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+    <script src="bower_components/angular-perfect-scrollbar/src/angular-perfect-scrollbar.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

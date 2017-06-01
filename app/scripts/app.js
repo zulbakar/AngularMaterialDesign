@@ -17,7 +17,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngMaterial',
-    'ngMaterialSidemenu'
+    'ngMaterialSidemenu',
+    'perfect_scrollbar'
   ])
   .config(function ($routeProvider, $locationProvider, $mdThemingProvider) {
     $routeProvider

@@ -19,49 +19,55 @@
             </md-list>
 
         </md-toolbar>
+        
+        <perfect-scrollbar class="sidemenu-custom" wheel-propagation="true" wheel-speed="10" min-scrollbar-length="20">
+        
+        <md-content layout-padding >
 
-        <md-content layout-padding class="sidemenu-custom">
+                <md-sidemenu locked="true">
+                    <md-sidemenu-group>
+                        <md-subheader class="md-no-sticky">Caption</md-subheader>
 
-            <md-sidemenu locked="true">
-                <md-sidemenu-group>
-                    <md-subheader class="md-no-sticky">Caption</md-subheader>
+                        <md-sidemenu-content md-icon="home" md-heading="Dashboard" md-arrow="true">
+                            <md-button class="md-raised" ng-click="$ctrl.go('/input')" ng-class="{'{{$ctrl.classActive}}':$ctrl.$location.path() === '/'}">Home</md-button>
+                            <md-button class="md-raised" ng-click="$ctrl.go('/form')" ng-class="{'{{$ctrl.classActive}}':$ctrl.$location.path() === '/form'}">Form</md-button>
+                            <md-button class="md-raised" ng-click="$ctrl.go('/about')" ng-class="{'{{$ctrl.classActive}}':$ctrl.$location.path() === '/about'}">About</md-button>
+                        </md-sidemenu-content>
 
-                    <md-sidemenu-content md-icon="home" md-heading="Dashboard" md-arrow="true">
-                        <md-button class="md-raised" ng-click="$ctrl.go('/input')" ng-class="{'{{$ctrl.classActive}}':$ctrl.$location.path() === '/'}">Home</md-button>
-                        <md-button class="md-raised" ng-click="$ctrl.go('/form')" ng-class="{'{{$ctrl.classActive}}':$ctrl.$location.path() === '/form'}">Form</md-button>
-                        <md-button class="md-raised" ng-click="$ctrl.go('/about')" ng-class="{'{{$ctrl.classActive}}':$ctrl.$location.path() === '/about'}">About</md-button>
-                    </md-sidemenu-content>
+                        <md-sidemenu-content md-heading="Menu 2" md-arrow="true">
+                            <md-sidemenu-button href="#">Submenu 1</md-sidemenu-button>
+                            <md-sidemenu-button href="#">Submenu 2</md-sidemenu-button>
+                            <md-sidemenu-button href="#">Submenu 3</md-sidemenu-button>
+                        </md-sidemenu-content>
 
-                    <md-sidemenu-content md-heading="Menu 2" md-arrow="true">
-                        <md-sidemenu-button href="#">Submenu 1</md-sidemenu-button>
-                        <md-sidemenu-button href="#">Submenu 2</md-sidemenu-button>
-                        <md-sidemenu-button href="#">Submenu 3</md-sidemenu-button>
-                    </md-sidemenu-content>
+                        <md-sidemenu-content md-heading="Menu 3" md-arrow="true">
+                            <md-sidemenu-button href="#">Submenu 1</md-sidemenu-button>
+                            <md-sidemenu-button href="#">Submenu 2</md-sidemenu-button>
+                            <md-sidemenu-button href="#">Submenu 3</md-sidemenu-button>
+                        </md-sidemenu-content>
+                    </md-sidemenu-group>
 
-                    <md-sidemenu-content md-heading="Menu 3" md-arrow="true">
-                        <md-sidemenu-button href="#">Submenu 1</md-sidemenu-button>
-                        <md-sidemenu-button href="#">Submenu 2</md-sidemenu-button>
-                        <md-sidemenu-button href="#">Submenu 3</md-sidemenu-button>
-                    </md-sidemenu-content>
-                </md-sidemenu-group>
+                    <md-sidemenu-group>
+                        <md-divider></md-divider>
 
-                <md-sidemenu-group>
-                    <md-divider></md-divider>
+                        <md-subheader class="md-no-sticky">Caption</md-subheader>
 
-                    <md-subheader class="md-no-sticky">Caption</md-subheader>
+                        <md-sidemenu-button href="#">Menu 4</md-sidemenu-button>
+                    </md-sidemenu-group>
 
-                    <md-sidemenu-button href="#">Menu 4</md-sidemenu-button>
-                </md-sidemenu-group>
+                    <md-sidemenu-group>
+                        <md-divider></md-divider>
 
-                <md-sidemenu-group>
-                    <md-divider></md-divider>
-
-                    <md-subheader class="md-no-sticky">Caption</md-subheader>
-                    <md-sidemenu-button href="#">Menu 5</md-sidemenu-button>
-                    <md-sidemenu-button href="#">Menu 6</md-sidemenu-button>
-                </md-sidemenu-group>
-            </md-sidemenu>
+                        <md-subheader class="md-no-sticky">Caption</md-subheader>
+                        <md-sidemenu-button href="#">Menu 5</md-sidemenu-button>
+                        <md-sidemenu-button href="#">Menu 6</md-sidemenu-button>
+                    </md-sidemenu-group>
+                </md-sidemenu>
+            
         </md-content>
+
+        </perfect-scrollbar>
+
     </md-sidenav>
 
 </div>

@@ -19,11 +19,14 @@
         <md-card-content>
             <md-content layout-padding class="md-no-momentum custom-border-form">
                 <md-tabs md-dynamic-height md-border-bottom>
+
                     <md-tab id="tab1">
+
                         <md-tab-label>
-                            ONE
+                            INPUT
                         </md-tab-label>
-                        <md-tab-body>
+
+                        <md-tab-body class="md-padding">
                             <br/>
                             <form name="cardform">
                                 <md-input-container class="md-icon-float md-block">
@@ -51,17 +54,63 @@
                                     <label>Donation Amount</label>
                                     <input ng-model="user.donation" type="number" step="0.01">
                                 </md-input-container>
+
+                                <div>
+                                    <md-button class="md-raised md-accent" type="submit">Submit</md-button>
+                                </div>
+
                             </form>
+
                         </md-tab-body>
+
                     </md-tab>
 
                     <md-tab id="tab2" ng-disabled="true">
+
                         <md-tab-label>
                             TWo
                         </md-tab-label>
-                        <md-tab-body>
-                            $nbsp;
+
+                        <md-tab-body class="md-padding">
+                            <br/> $nbsp;
                         </md-tab-body>
+
+                    </md-tab>
+
+                    <md-tab id="tab3">
+
+                        <md-tab-label>
+                            Lorem Ipsum
+                        </md-tab-label>
+
+                        <md-tab-body class="md-padding">
+                            <br/> Where can I get some? There are many variations of passages of Lorem Ipsum available, but
+                            the majority have suffered alteration in some form, by injected humour, or randomised words which
+                            don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need
+                            to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                            generators on the Internet tend to repeat predefined chunks as necessary, making this the first
+                            true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a
+                            handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated
+                            Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic
+                            words etc. Where can I get some? There are many variations of passages of Lorem Ipsum available,
+                            but the majority have suffered alteration in some form, by injected humour, or randomised words
+                            <h1 class="md-display-1">which don't look even slightly believable</h1>. If you are going to use a passage of Lorem Ipsum,
+                            you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem
+                            Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the
+                            first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined
+                            with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+                            The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic
+                            words etc. Where can I get some? There are many variations of passages of Lorem Ipsum available,
+                            but the majority have suffered alteration in some form, by injected humour, or randomised words
+                            which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,
+                            you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem
+                            Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the
+                            first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined
+                            with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+                            The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic
+                            words etc.
+                        </md-tab-body>
+
                     </md-tab>
 
                 </md-tabs>

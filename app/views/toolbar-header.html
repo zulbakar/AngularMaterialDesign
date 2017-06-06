@@ -12,6 +12,63 @@
 
             <md-menu>
                 <md-button ng-click="$mdMenu.open($event)" class="md-icon-button" aria-label="Open some menu">
+                    <md-icon md-menu-origin md-font-library="material-icons">add_alert</md-icon>
+                </md-button>
+
+                <md-menu-content class="md-dense" style="min-height:30vh;max-height:50vh;">
+
+                    <md-list class="md-dense">
+                        <md-subheader class="md-no-sticky md-accent md-toolbar-tools" style="height:2vh;padding-bottom:1vh;">Notifications</md-subheader>
+                        <md-divider></md-divider>
+
+                        <md-list-item class="md-2-line" ng-click="null">
+                            <md-icon md-menu-origin md-font-library="material-icons" class="md-accent">warning</md-icon>
+                            <div class="md-list-item-text">
+                                <p>I'll be in your neighborhood doing errands</p>
+                            </div>
+                        </md-list-item>
+
+                        <md-list-item class="md-2-line" ng-click="null">
+                            <md-icon md-menu-origin md-font-library="material-icons" class="md-primary">error</md-icon>
+                            <div class="md-list-item-text">
+                                <p>I'll be in your neighborhood doing errands</p>
+                            </div>
+                        </md-list-item>
+
+                        <md-list-item class="md-2-line" ng-click="null">
+                            <md-icon md-menu-origin md-font-library="material-icons" class="md-accent">warning</md-icon>
+                            <div class="md-list-item-text">
+                                <p>I'll be in your neighborhood doing errands</p>
+                            </div>
+                        </md-list-item>
+
+                        <md-list-item class="md-2-line" ng-click="null">
+                            <md-icon md-menu-origin md-font-library="material-icons" class="md-primary">error</md-icon>
+                            <div class="md-list-item-text">
+                                <p>I'll be in your neighborhood doing errands</p>
+                            </div>
+                        </md-list-item>
+
+                        <md-list-item class="md-2-line" ng-click="null">
+                            <md-icon md-menu-origin md-font-library="material-icons" class="md-primary">error</md-icon>
+                            <div class="md-list-item-text">
+                                <p>I'll be in your neighborhood doing errands</p>
+                            </div>
+                        </md-list-item>
+
+                        <md-divider></md-divider>
+
+                        <md-list-item class="md-2-line" style="height:1vh;padding-top:2vh;">
+                            <md-subheader ng-click="null" class="md-toolbar-tools" style="height:2vh;padding-top:2vh;">view all Notifications</md-subheader>
+                        </md-list-item>
+                    </md-list>
+
+                </md-menu-content>
+
+            </md-menu>
+
+            <md-menu>
+                <md-button ng-click="$mdMenu.open($event)" class="md-icon-button" aria-label="Open some menu">
                     <md-icon md-menu-origin md-font-library="material-icons">more_vert</md-icon>
                 </md-button>
 

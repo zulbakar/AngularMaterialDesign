@@ -12,56 +12,134 @@
 
             <md-menu>
                 <md-button ng-click="$mdMenu.open($event)" class="md-icon-button" aria-label="Open some menu">
-                    <md-icon md-menu-origin md-font-library="material-icons">add_alert</md-icon>
+                    <md-tooltip md-direction="bottom">Notifications</md-tooltip>
+                    <md-icon md-menu-origin md-font-library="material-icons">notifications</md-icon>
                 </md-button>
 
-                <md-menu-content class="md-dense" style="min-height:30vh;max-height:50vh;">
+                <md-menu-content class="md-dense" style="min-height:380px;">
 
-                    <md-list class="md-dense">
-                        <md-subheader class="md-no-sticky md-accent md-toolbar-tools" style="height:2vh;padding-bottom:1vh;">Notifications</md-subheader>
-                        <md-divider></md-divider>
+                    <md-card flex style="width:350px;height:320px;margin:-8px 0;padding:0;">
 
-                        <md-list-item class="md-2-line" ng-click="null">
-                            <md-icon md-menu-origin md-font-library="material-icons" class="md-accent">warning</md-icon>
-                            <div class="md-list-item-text">
-                                <p>I'll be in your neighborhood doing errands</p>
-                            </div>
-                        </md-list-item>
+                        <div style="height: 30px !important;background-color:#e91e63;">
+                            <span class="md-headline" style="color:rgba(255,255,255,1);padding:8px 8px 5px;text-align:justify;font-size:16px;">
+                                Notifications</span>
+                        </div>
 
-                        <md-list-item class="md-2-line" ng-click="null">
-                            <md-icon md-menu-origin md-font-library="material-icons" class="md-primary">error</md-icon>
-                            <div class="md-list-item-text">
-                                <p>I'll be in your neighborhood doing errands</p>
-                            </div>
-                        </md-list-item>
+                        <perfect-scrollbar class="sidemenu-custom" wheel-propagation="true" wheel-speed="5" min-scrollbar-length="5">
 
-                        <md-list-item class="md-2-line" ng-click="null">
-                            <md-icon md-menu-origin md-font-library="material-icons" class="md-accent">warning</md-icon>
-                            <div class="md-list-item-text">
-                                <p>I'll be in your neighborhood doing errands</p>
-                            </div>
-                        </md-list-item>
+                            <md-card-content style="margin:0 0 30px 0;padding:0;position:inherit;">
+                                <md-content>
 
-                        <md-list-item class="md-2-line" ng-click="null">
-                            <md-icon md-menu-origin md-font-library="material-icons" class="md-primary">error</md-icon>
-                            <div class="md-list-item-text">
-                                <p>I'll be in your neighborhood doing errands</p>
-                            </div>
-                        </md-list-item>
+                                    <md-list class="md-dense" style="margin-top:-7px;">
 
-                        <md-list-item class="md-2-line" ng-click="null">
-                            <md-icon md-menu-origin md-font-library="material-icons" class="md-primary">error</md-icon>
-                            <div class="md-list-item-text">
-                                <p>I'll be in your neighborhood doing errands</p>
-                            </div>
-                        </md-list-item>
+                                        <md-list-item class="md-2-line" ng-click="null">
+                                            <md-icon md-menu-origin md-font-library="material-icons" class="md-accent">warning</md-icon>
+                                            <div class="md-list-item-text">
+                                                <p>I'll be in your neighborhood doing errands 1</p>
+                                            </div>
+                                        </md-list-item>
 
-                        <md-divider></md-divider>
+                                        <md-divider></md-divider>
 
-                        <md-list-item class="md-2-line" style="height:1vh;padding-top:2vh;">
-                            <md-subheader ng-click="null" class="md-toolbar-tools" style="height:2vh;padding-top:2vh;">view all Notifications</md-subheader>
-                        </md-list-item>
-                    </md-list>
+                                        <md-list-item class="md-2-line" ng-click="null">
+                                            <md-icon md-menu-origin md-font-library="material-icons" class="md-primary">error</md-icon>
+                                            <div class="md-list-item-text">
+                                                <p>I'll be in your neighborhood doing errands 2</p>
+                                            </div>
+                                        </md-list-item>
+
+                                        <md-divider></md-divider>
+
+                                        <md-list-item class="md-2-line" ng-click="null">
+                                            <md-icon md-menu-origin md-font-library="material-icons" class="md-accent">warning</md-icon>
+                                            <div class="md-list-item-text">
+                                                <p>I'll be in your neighborhood doing errands 3 I'll be in your neighborhood
+                                                    doing errands 3 I'll be in your neighborhood doing errands 3</p>
+                                            </div>
+                                        </md-list-item>
+
+                                        <md-divider></md-divider>
+
+                                        <md-list-item class="md-2-line" ng-click="null">
+                                            <md-icon md-menu-origin md-font-library="material-icons" class="md-primary">error</md-icon>
+                                            <div class="md-list-item-text">
+                                                <p>I'll be in your neighborhood doing errands 4</p>
+                                            </div>
+                                        </md-list-item>
+
+                                        <md-divider></md-divider>
+
+                                        <md-list-item class="md-2-line" ng-click="null">
+                                            <md-icon md-menu-origin md-font-library="material-icons" class="md-accent">warning</md-icon>
+                                            <div class="md-list-item-text">
+                                                <p>I'll be in your neighborhood doing errands 5</p>
+                                            </div>
+                                        </md-list-item>
+
+                                        <md-divider></md-divider>
+
+                                        <md-list-item class="md-2-line" ng-click="null">
+                                            <md-icon md-menu-origin md-font-library="material-icons" class="md-accent">warning</md-icon>
+                                            <div class="md-list-item-text">
+                                                <p>I'll be in your neighborhood doing errands 6</p>
+                                            </div>
+                                        </md-list-item>
+
+                                        <md-divider></md-divider>
+
+                                        <md-list-item class="md-2-line" ng-click="null">
+                                            <md-icon md-menu-origin md-font-library="material-icons" class="md-primary">error</md-icon>
+                                            <div class="md-list-item-text">
+                                                <p>I'll be in your neighborhood doing errands 7</p>
+                                            </div>
+                                        </md-list-item>
+
+                                        <md-divider></md-divider>
+
+                                        <md-list-item class="md-2-line" ng-click="null">
+                                            <md-icon md-menu-origin md-font-library="material-icons" class="md-accent">warning</md-icon>
+                                            <div class="md-list-item-text">
+                                                <p>I'll be in your neighborhood doing errands 8</p>
+                                            </div>
+                                        </md-list-item>
+
+                                        <md-divider></md-divider>
+
+                                        <md-list-item class="md-2-line" ng-click="null">
+                                            <md-icon md-menu-origin md-font-library="material-icons" class="md-primary">error</md-icon>
+                                            <div class="md-list-item-text">
+                                                <p>I'll be in your neighborhood doing errands 9</p>
+                                            </div>
+                                        </md-list-item>
+
+                                        <md-divider></md-divider>
+
+                                        <md-list-item class="md-2-line" ng-click="null">
+                                            <md-icon md-menu-origin md-font-library="material-icons" class="md-accent">warning</md-icon>
+                                            <div class="md-list-item-text">
+                                                <p>I'll be in your neighborhood doing errands 10</p>
+                                            </div>
+                                        </md-list-item>
+
+                                        <md-divider></md-divider>
+
+                                    </md-list>
+
+                                </md-content>
+
+                            </md-card-content>
+
+                        </perfect-scrollbar>
+
+                        <div style="width:100%;padding:0 5px;;height:34px !important;position:absolute;bottom:0;background:rgba(255,255,255,1);">
+
+                            <a href="#" class="md-headline" style="color:rgba(0,0,0,0.7);padding:8px 8px 5px;font-size:13px;margin-left:100px;">
+                                view all Notifications (10)
+                            </a>
+
+                        </div>
+
+                    </md-card>
 
                 </md-menu-content>
 
@@ -69,37 +147,46 @@
 
             <md-menu>
                 <md-button ng-click="$mdMenu.open($event)" class="md-icon-button" aria-label="Open some menu">
-                    <md-icon md-menu-origin md-font-library="material-icons">more_vert</md-icon>
+                    <md-tooltip md-direction="bottom">User</md-tooltip>
+                    <md-icon md-menu-origin md-font-library="material-icons">person</md-icon>
                 </md-button>
 
-                <md-menu-content>
+                <md-menu-content class="md-dense" style="min-height:267px;">
 
-                    <md-menu-item>
-                        <md-button ng-click="doSomething()" aria-label="Do something">
-                            <md-icon md-menu-origin md-font-library="material-icons">account_box</md-icon>
-                            Profile
-                        </md-button>
-                    </md-menu-item>
+                    <md-card flex style="width:300px;height:250px;margin:-8px 0;padding:0;">
 
-                    <md-menu-item>
-                        <md-button ng-click="doSomething()" aria-label="Setting">
-                            <md-icon md-menu-origin md-font-library="material-icons">settings</md-icon>
-                            Setting
-                        </md-button>
-                    </md-menu-item>
+                        <img style="height: 110px !important;" ng-src="https://storage.googleapis.com/material-design/publish/material_v_11/assets/0Bx4BSt6jniD7Wm9Tcmx5d2tueUE/style_imagery_bestpractices_narrative1.png"
+                            class="md-card-image" alt="Washed Out">
 
-                    <md-divider></md-divider>
+                        <div style="height: 110px !important;background-color:#e91e63;"></div>
 
-                    <md-menu-item>
-                        <md-button ng-click="doSomething()" aria-label="Log Keluar">
-                            <md-icon md-menu-origin md-font-library="material-icons">exit_to_app</md-icon>
-                            Log Keluar
-                        </md-button>
-                    </md-menu-item>
+                        <md-card-title style="margin-top:auto !important;">
+                            <img ng-src="./app/images/user.png" class="img-circle md-whiteframe-3dp" style="margin:-70px auto;width:80px;height:80px;"
+                                alt="Zulclunk">
+                        </md-card-title>
+
+                        <md-card-content>
+                            <md-content layout-padding class="md-no-momentum" style="font-weight:bold;text-transform:uppercase;">
+                                <center>JOhn Doe</center>
+                            </md-content>
+
+                            <md-divider></md-divider>
+                            <center>
+                                <md-button ng-click="doSomething()" aria-label="Do something">
+                                    <md-icon md-menu-origin md-font-library="material-icons">account_box</md-icon>
+                                    Profile
+                                </md-button>
+                                <md-button ng-click="doSomething()" aria-label="Do something">
+                                    <md-icon md-menu-origin md-font-library="material-icons">exit_to_app</md-icon>
+                                    Logout
+                                </md-button>
+
+                            </center>
+                        </md-card-content>
+
+                    </md-card>
 
                 </md-menu-content>
-
-            </md-menu>
 
         </div>
 

@@ -16,18 +16,21 @@
                     <md-icon md-menu-origin md-font-library="material-icons">notifications</md-icon>
                 </md-button>
 
-                <md-menu-content class="md-dense" style="min-height:380px;">
+                <md-menu-content class="md-dense" style="min-height:310px;">
 
-                    <md-card flex style="width:350px;height:320px;margin:-8px 0;padding:0;">
+                    <md-card flex style="width:270px;height:320px;margin:-8px 0;padding:0;">
 
-                        <div style="height: 30px !important;background-color:#e91e63;">
-                            <span class="md-headline" style="color:rgba(255,255,255,1);padding:8px 8px 5px;text-align:justify;font-size:16px;">
-                                Notifications</span>
+                        <div style="width:100%;padding:0 5px;;height:34px !important;position:absolute;top:0;background:rgba(255,255,255,1);z-index:99999; text-align:center;">
+                            <span class="md-headline" style="color:rgba(0,0,0,1);padding:8px 8px 5px;font-size:13px;font-weight:bold;">
+                                NOTIFICATIONS</span>
+
+                            <md-divider></md-divider>
                         </div>
 
-                        <perfect-scrollbar class="sidemenu-custom" wheel-propagation="true" wheel-speed="5" min-scrollbar-length="5">
+                        <perfect-scrollbar class="sidemenu-custom" wheel-propagation="true" wheel-speed="10" min-scrollbar-length="20">
 
-                            <md-card-content style="margin:0 0 30px 0;padding:0;position:inherit;">
+                            <md-card-content style="margin:34px 0 26px 0;padding:0;position:relative;">
+
                                 <md-content>
 
                                     <md-list class="md-dense" style="margin-top:-7px;">
@@ -35,7 +38,8 @@
                                         <md-list-item class="md-2-line" ng-click="null">
                                             <md-icon md-menu-origin md-font-library="material-icons" class="md-accent">warning</md-icon>
                                             <div class="md-list-item-text">
-                                                <p>I'll be in your neighborhood doing errands 1</p>
+                                                <h3>12 new members joined</h3>
+                                                <p style="font-size:11px;">30 sec ago</p>
                                             </div>
                                         </md-list-item>
 
@@ -44,7 +48,8 @@
                                         <md-list-item class="md-2-line" ng-click="null">
                                             <md-icon md-menu-origin md-font-library="material-icons" class="md-primary">error</md-icon>
                                             <div class="md-list-item-text">
-                                                <p>I'll be in your neighborhood doing errands 2</p>
+                                                <h3>4 sales made</h3>
+                                                <p style="font-size:11px;">1 min ago</p>
                                             </div>
                                         </md-list-item>
 
@@ -53,8 +58,8 @@
                                         <md-list-item class="md-2-line" ng-click="null">
                                             <md-icon md-menu-origin md-font-library="material-icons" class="md-accent">warning</md-icon>
                                             <div class="md-list-item-text">
-                                                <p>I'll be in your neighborhood doing errands 3 I'll be in your neighborhood
-                                                    doing errands 3 I'll be in your neighborhood doing errands 3</p>
+                                                <h3>Nancy Doe deleted account</h3>
+                                                <p style="font-size:11px;">5 min ago</p>
                                             </div>
                                         </md-list-item>
 
@@ -63,7 +68,8 @@
                                         <md-list-item class="md-2-line" ng-click="null">
                                             <md-icon md-menu-origin md-font-library="material-icons" class="md-primary">error</md-icon>
                                             <div class="md-list-item-text">
-                                                <p>I'll be in your neighborhood doing errands 4</p>
+                                                <h3>Nancy changed name</h3>
+                                                <p style="font-size:11px;">10 min ago</p>
                                             </div>
                                         </md-list-item>
 
@@ -72,7 +78,8 @@
                                         <md-list-item class="md-2-line" ng-click="null">
                                             <md-icon md-menu-origin md-font-library="material-icons" class="md-accent">warning</md-icon>
                                             <div class="md-list-item-text">
-                                                <p>I'll be in your neighborhood doing errands 5</p>
+                                                <h3>zulBakar commented your post</h3>
+                                                <p style="font-size:11px;">14 min ago</p>
                                             </div>
                                         </md-list-item>
 
@@ -81,7 +88,8 @@
                                         <md-list-item class="md-2-line" ng-click="null">
                                             <md-icon md-menu-origin md-font-library="material-icons" class="md-accent">warning</md-icon>
                                             <div class="md-list-item-text">
-                                                <p>I'll be in your neighborhood doing errands 6</p>
+                                                <h3>zulBakar update status</h3>
+                                                <p style="font-size:11px;">20 min ago</p>
                                             </div>
                                         </md-list-item>
 
@@ -90,7 +98,8 @@
                                         <md-list-item class="md-2-line" ng-click="null">
                                             <md-icon md-menu-origin md-font-library="material-icons" class="md-primary">error</md-icon>
                                             <div class="md-list-item-text">
-                                                <p>I'll be in your neighborhood doing errands 7</p>
+                                                <h3>settings updated</h3>
+                                                <p style="font-size:11px;">30 min ago</p>
                                             </div>
                                         </md-list-item>
 
@@ -121,8 +130,6 @@
                                             </div>
                                         </md-list-item>
 
-                                        <md-divider></md-divider>
-
                                     </md-list>
 
                                 </md-content>
@@ -133,7 +140,9 @@
 
                         <div style="width:100%;padding:0 5px;;height:34px !important;position:absolute;bottom:0;background:rgba(255,255,255,1);">
 
-                            <a href="#" class="md-headline" style="color:rgba(0,0,0,0.7);padding:8px 8px 5px;font-size:13px;margin-left:100px;">
+                            <md-divider></md-divider>
+
+                            <a href="#" class="md-headline" style="color:rgba(0,0,0,0.7);padding:8px 8px 5px;font-size:13px;margin-left:60px;">
                                 view all Notifications (10)
                             </a>
 
@@ -153,7 +162,7 @@
 
                 <md-menu-content class="md-dense" style="min-height:267px;">
 
-                    <md-card flex style="width:300px;height:250px;margin:-8px 0;padding:0;">
+                    <md-card flex style="width:270px;height:250px;margin:-8px 0;padding:0;">
 
                         <img style="height: 110px !important;" ng-src="https://storage.googleapis.com/material-design/publish/material_v_11/assets/0Bx4BSt6jniD7Wm9Tcmx5d2tueUE/style_imagery_bestpractices_narrative1.png"
                             class="md-card-image" alt="Washed Out">
@@ -167,7 +176,7 @@
 
                         <md-card-content>
                             <md-content layout-padding class="md-no-momentum" style="font-weight:bold;text-transform:uppercase;">
-                                <center>JOhn Doe</center>
+                                <center>Zul Bakar</center>
                             </md-content>
 
                             <md-divider></md-divider>
@@ -180,7 +189,6 @@
                                     <md-icon md-menu-origin md-font-library="material-icons">exit_to_app</md-icon>
                                     Logout
                                 </md-button>
-
                             </center>
                         </md-card-content>
 

@@ -1,4 +1,4 @@
-# Angular Material Boilerplate
+# Angular Material Design
 A boilerplate for Material Design applications using Angular 1.x and Angular Material. This project uses the latest master branch of Angular Material to build the application. using yo generator, grunt as task runner
 
 ![angular material boilerplate](https://4.bp.blogspot.com/-2VHr5jhZezc/WTS4r7j5RNI/AAAAAAAABFk/GPxVKqOV9FIaGt265XmBKnohbBkKrzV1wCLcB/s1600/angular%2Bmaterial%2Bboilerplate.jpg)
@@ -6,7 +6,7 @@ A boilerplate for Material Design applications using Angular 1.x and Angular Mat
 # Getting Started
 Clone this repository and execute the following commands in a terminal:
 
-> * git clone https://github.com/zulClunk/angular-material-boilerplate.git
+> * git clone https://github.com/zulbakar/AngularMaterialDesign.git
 > * npm update
 > * bower update
 > * grunt serve

@@ -17,22 +17,23 @@
                     <md-badge>10</md-badge>
                 </md-button>
 
-                <md-menu-content class="md-dense" style="min-height:310px;">
+                <md-menu-content class="md-dense custom-menu-content-notification">
 
-                    <md-card flex style="width:270px;height:320px;margin:-8px 0;padding:0;">
+                    <md-card flex class="custom-notification">
 
-                        <div style="width:100%;padding:0 5px;;height:34px !important;position:absolute;top:0;background:rgba(255,255,255,1);z-index:99999; text-align:center;">
-                            <span class="md-headline" style="color:rgba(0,0,0,1);padding:8px 8px 5px;font-size:13px;font-weight:bold;">
-                                NOTIFICATIONS</span>
+                        <div class="custom-notification-header">
+                            <span class="md-headline custom-notification-header-text">
+                                NOTIFICATIONS
+                            </span>
 
                             <md-divider></md-divider>
                         </div>
 
-                        <md-card-content style="margin:34px 0 26px 0;padding:0;position:relative;">
+                        <md-card-content class="custom-notification-content">
 
                             <md-content>
 
-                                <md-list class="md-dense" style="margin-top:-7px;">
+                                <md-list class="md-dense custom-notification-list">
 
                                     <md-list-item class="md-2-line" ng-click="null">
                                         <md-icon md-menu-origin md-font-library="material-icons" class="md-accent">warning</md-icon>
@@ -135,11 +136,11 @@
 
                         </md-card-content>
 
-                        <div style="width:100%;padding:0 5px;height:34px !important;position:absolute;bottom:0;background:rgba(255,255,255,1);">
+                        <div class="custom-notification-footer">
 
                             <md-divider></md-divider>
 
-                            <a href="#" class="md-headline" style="color:rgba(0,0,0,0.7);padding:8px 8px 5px;font-size:13px;margin-left:60px;">
+                            <a href="#/" class="md-headline custom-notification-footer-text" ng-click="$event.preventDefault();null">
                                 view all Notifications
                             </a>
 
@@ -157,22 +158,22 @@
                     <md-icon md-menu-origin md-font-library="material-icons">person</md-icon>
                 </md-button>
 
-                <md-menu-content class="md-dense" style="min-height:267px;">
+                <md-menu-content class="md-dense custom-menu-content-profile">
 
-                    <md-card flex style="width:270px;height:250px;margin:-8px 0;padding:0;">
+                    <md-card flex class="custom-profile">
 
                         <img style="height: 110px !important;" ng-src="https://storage.googleapis.com/material-design/publish/material_v_11/assets/0Bx4BSt6jniD7Wm9Tcmx5d2tueUE/style_imagery_bestpractices_narrative1.png"
-                            class="md-card-image" alt="Washed Out">
+                            class="md-card-image" alt="Zul Bakar">
 
-                        <div style="height: 110px !important;background-color:#e91e63;"></div>
+                        <div class="custom-profile-bg"></div>
 
-                        <md-card-title style="margin-top:auto !important;">
-                            <img ng-src="./app/images/user.png" class="img-circle md-whiteframe-3dp" style="margin:-70px auto;width:80px;height:80px;"
-                                alt="Zulclunk">
+                        <md-card-title class="custom-profile-title">
+                            <img ng-src="./app/images/user.png" class="img-circle md-whiteframe-3dp custom-profile-title-img"
+                                alt="Zul Bakar">
                         </md-card-title>
 
                         <md-card-content>
-                            <md-content layout-padding class="md-no-momentum" style="font-weight:bold;text-transform:uppercase;">
+                            <md-content layout-padding class="md-no-momentum custom-profile-content-name">
                                 <center>Zul Bakar</center>
                             </md-content>
 

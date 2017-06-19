@@ -45,6 +45,14 @@
     .content-custom {
         padding: 3.0vh 2.0vw 3.0vh 2.0vw;
     }
+    /*view mobile block*/
+    .custom-view-mobile {
+        display: block;
+    }
+    /*view desktop none*/
+    .custom-view-desktop {
+        display: none;
+    }
 }
 @media screen and (min-width: 768px) {
     .sidemenu-custom {
@@ -82,6 +90,15 @@
     ::-webkit-scrollbar-thumb:window-inactive {
         background: rgba(0,0,0,0.2); 
     }
+    /*view mobile none*/
+    .custom-view-mobile {
+        display: none;
+    }
+    /*view desktop block*/
+    .custom-view-desktop {
+        display: block;
+    }
+
 }
 
 .bottom-underline{
@@ -187,4 +204,6 @@ md-badge{
    font-weight:bold;
    text-transform:uppercase;
 }
+
+
 

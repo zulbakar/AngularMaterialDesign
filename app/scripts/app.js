@@ -17,19 +17,18 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngMaterial',
-    'ngMaterialSidemenu',
-    'perfect_scrollbar'
+    'ngMaterialSidemenu'
   ])
   .config(function ($routeProvider, $locationProvider, $mdThemingProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html'
+        template: '<amd-main></amd-main>'
       })
       .when('/about', {
-        templateUrl: 'views/about.html'
+        template: '<amd-about></amd-about>'
       })
       .when('/form', {
-        templateUrl: 'views/forminput.html'
+        template: '<amd-form></amd-form>'
       })
       .otherwise({
         redirectTo: '/'

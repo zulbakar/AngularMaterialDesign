@@ -1,0 +1,51 @@
+<div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3" style="margin-top:5vh;">
+
+    <span flex></span>
+    <md-card layout-padding class="md-whiteframe-5dp" style="width: 100%;margin-left:1px;">
+        <md-content>
+
+            <md-toolbar class="md-accent md-whiteframe-1dp" style="height: 30px;">
+
+                <div class="md-toolbar-tools">
+                    <h2 flex md-truncate>Login</h2>
+                </div>
+
+            </md-toolbar>
+
+            <md-content class="md-padding">
+
+                <form name="projectForm">
+
+                    <md-input-container class="md-block">
+                        <label>Username</label>
+                        <input md-maxlength="30" required md-no-asterisk name="username" ng-model="project.username">
+                        <div ng-messages="projectForm.username.$error">
+                            <div ng-message="required">This is required.</div>
+                            <div ng-message="md-maxlength">The username must be less than 30 characters long.</div>
+                        </div>
+                    </md-input-container>
+
+                    <md-input-container class="md-block">
+                        <label>Password</label>
+                        <input required type="password" name="password" ng-model="project.password" minlength="10" maxlength="30" ng-pattern="/^.+@.+\..+$/"
+                        />
+
+                        <div ng-messages="projectForm.password.$error" role="alert">
+                            <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                                Your email must be between 10 and 30 characters long and look like password.
+                            </div>
+                        </div>
+                    </md-input-container>
+
+                    <div>
+                        <md-button class="md-raised md-accent" type="submit">Submit</md-button>
+                    </div>
+                </form>
+
+            </md-content>
+
+        </md-content>
+
+    </md-card>
+
+</div>

@@ -1,0 +1,4 @@
+<amd-dashboard-view ng-if="$ctrl.$location.path() !== '/pages/login' && $ctrl.$location.path() !== '/pages/register'" layout="column" style="height:100%;" ng-cloak>
+
+</amd-dashboard-view>
+<amd-page-login ng-if="$ctrl.$location.path() === '/pages/login' || $ctrl.$location.path() === '/pages/register'" flex onload="$ctrl.logout"></amd-page-login>

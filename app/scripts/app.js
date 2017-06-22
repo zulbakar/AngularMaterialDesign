@@ -30,6 +30,12 @@ angular
       .when('/form', {
         template: '<amd-form></amd-form>'
       })
+      .when('/pages/login', {
+        template: '<amd-login></amd-login>'
+      })
+      .when('/pages/register', {
+        template: '<amd-form></amd-form>'
+      })
       .otherwise({
         redirectTo: '/'
       });

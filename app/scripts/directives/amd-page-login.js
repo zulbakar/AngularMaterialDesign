@@ -13,7 +13,6 @@ angular.module('angularMaterialBoilerplateApp')
       function amdPageLogin($log) {
         var $ctrl = this;
 
-
       }]
   });
 

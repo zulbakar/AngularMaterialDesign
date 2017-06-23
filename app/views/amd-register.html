@@ -7,29 +7,44 @@
             <md-toolbar class="md-accent md-whiteframe-1dp" style="height: 30px;border-left:solid 10px #01579b;">
 
                 <div class="md-toolbar-tools">
-                    <h2 flex md-truncate>Login</h2>
+                    <h2 flex md-truncate>Register</h2>
                 </div>
 
             </md-toolbar>
 
-            <md-content class="md-padding">
+            <md-content class="md-no-momentum md-padding">
 
                 <form name="projectForm">
 
                     <md-input-container class="md-block">
 
-                        <md-icon md-font-library="material-icons">person_pin</md-icon>
+                        <md-icon md-font-library="material-icons">person</md-icon>
                         <label>Username</label>
                         <input type="text" md-maxlength="12" required name="username" ng-model="project.username">
                         <div ng-messages="projectForm.username.$error">
                             <div ng-message="required">This is required.</div>
                             <div ng-message="md-maxlength">The username must be less than 12 characters long.</div>
                         </div>
+
                     </md-input-container>
 
                     <md-input-container class="md-block">
 
-                        <md-icon md-font-library="material-icons">lock_open</md-icon>
+                        <md-icon md-font-library="material-icons">email</md-icon>
+                        <label>Email</label>
+                        <input required type="email" name="password" ng-model="project.password" minlength="10" maxlength="30" ng-pattern="/^.+@.+\..+$/"
+                        />
+                        <div ng-messages="projectForm.password.$error" role="alert">
+                            <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                                Your email must be between 10 and 30 characters long and look like password.
+                            </div>
+                        </div>
+
+                    </md-input-container>
+
+                    <md-input-container class="md-block">
+
+                        <md-icon md-font-library="material-icons">lock</md-icon>
                         <label>Password</label>
                         <input required type="password" name="password" ng-model="project.password" minlength="10" maxlength="30" ng-pattern="/^.+@.+\..+$/"
                         />
@@ -39,17 +54,20 @@
                                 Your password must be between 10 and 30 characters long and look like password.
                             </div>
                         </div>
+
                     </md-input-container>
 
                     <div>
-                        <md-button class="md-raised md-accent" type="submit">Submit</md-button>
+                        <md-button class="md-raised md-accent" aria-label="Submit" type="submit">
+                            <span>Submit</span>
+                        </md-button>
                     </div>
                 </form>
 
                 <hr/>
-
+                
                 <center>
-                    <span style="color:#9e9e9e ;">Or Login with media social</span>
+                    <span style="color:#9e9e9e ;">Or Register with media social</span>
                     <br/><br/>
 
                     <a class="btn btn-lg btn-social-icon btn-facebook">

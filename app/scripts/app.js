@@ -34,7 +34,10 @@ angular
         template: '<amd-login></amd-login>'
       })
       .when('/pages/register', {
-        template: '<amd-form></amd-form>'
+        template: '<amd-register></amd-register>'
+      })
+      .when('/profile', {
+        template: '<amd-profile></amd-profile>'
       })
       .otherwise({
         redirectTo: '/'
@@ -43,7 +46,7 @@ angular
     $locationProvider.hashPrefix('');
 
     var primaryColorMap = $mdThemingProvider.extendPalette('blue', {
-      '500': '#0288d1'
+      '500': '#01579b'
     });
 
     // Register the new color palette map with the name <code>neonRed</code>

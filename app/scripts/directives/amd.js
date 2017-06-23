@@ -9,8 +9,8 @@
 angular.module('angularMaterialBoilerplateApp')
   .component('amd', {
     templateUrl: 'views/amd.html',
-    controller: ['$log', '$location', '$route',
-      function amd($log, $location, $route) {
+    controller: ['$log', '$location',
+      function amd($log, $location) {
         var $ctrl = this;
 
         $ctrl.$location = $location;

@@ -1,29 +1,25 @@
-<div id="bg">
-    <img src="http://wallpapercave.com/wp/Ib27xC1.jpg" alt="background cover">
-</div>
-
 <md-toolbar style="background:transparent;">
     <div class="md-toolbar-tools">
 
         <h2 flex md-truncate>Angular Material Design</h2>
 
-        <md-button ng-href="./#/" aria-label="Register" hide-xs>
+        <md-button ng-href="./#/" aria-label="Register" class="custom-view-desktop">
             <md-icon md-menu-origin md-font-library="material-icons">dashboard</md-icon>
             <span> Dashboard</span>
         </md-button>
 
-        <md-button ng-href="./#/pages/register" aria-label="Register" hide-xs>
+        <md-button ng-href="./#/pages/register" aria-label="Register" class="custom-view-desktop">
             <md-icon md-menu-origin md-font-library="material-icons">person_add</md-icon>
             <span> Register</span>
         </md-button>
 
-        <md-button ng-href="./#/pages/login" class="md-raised md-accent" aria-label="Login" hide-xs>
+        <md-button ng-href="./#/pages/login" class="md-raised md-accent custom-view-desktop" aria-label="Login">
             <md-icon md-menu-origin md-font-library="material-icons">fingerprint</md-icon>
             <span> Login</span>
         </md-button>
 
         <!--Menu Mobile view-->
-        <md-menu md-position-mode="target-right target" hide-gt-md>
+        <md-menu md-position-mode="target-right target" class="custom-view-mobile">
 
             <md-button aria-label="Open demo menu" class="md-icon-button" ng-click="$mdMenu.open($event)">
                 <md-icon md-font-library="material-icons">more_vert</md-icon>
@@ -50,7 +46,7 @@
                 </md-menu-item>
 
                 <md-menu-item>
-                    <md-button ng-href="./#/pages/login">
+                    <md-button ng-href="./#/pages/login" class="md-accent">
                         <div layout="row" flex>
                             <md-icon md-menu-origin md-font-library="material-icons">fingerprint</md-icon>
                             <span> Login</span>

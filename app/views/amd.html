@@ -1,5 +1,11 @@
-<amd-dashboard-view ng-if="$ctrl.$location.path() !== '/pages/login' && $ctrl.$location.path() !== '/pages/register'" layout="column" style="height:100%;" ng-cloak>
+<amd-dashboard-view ng-if="$ctrl.$location.path() !== '/pages/login' && $ctrl.$location.path() !== '/pages/register'" layout="column"
+    style="height:100%;background-color:#eeeeee;" ng-cloak>
 
 </amd-dashboard-view>
 <amd-page-login ng-if="$ctrl.$location.path() === '/pages/login'" flex></amd-page-login>
 <amd-page-register ng-if="$ctrl.$location.path() === '/pages/register'" flex></amd-page-register>
+
+<!-- Add background picture -->
+<div id="bg" ng-if="$ctrl.$location.path() === '/pages/login' || $ctrl.$location.path() === '/pages/register'">
+    <img src="http://wallpapercave.com/wp/Ib27xC1.jpg" alt="background cover">
+</div>

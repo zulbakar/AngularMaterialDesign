@@ -213,6 +213,7 @@ md-badge{
   width: 200%; 
   height: 200%;
   background: #000000;
+  z-index: -999999;
 }
 #bg img {
   position: absolute; 
@@ -224,6 +225,37 @@ md-badge{
   min-width: 50%;
   min-height: 50%;
   opacity: 0.3;
+}
+
+/*Profile page*/
+.card-profile {
+   height:auto;
+   margin:-8px auto;
+   padding:0;
+}
+.card-profile-bg-color {
+   height: 150px !important;
+   background-color:#e91e63;
+   
+}
+
+/*card image background*/
+.card-profile-bg-img {
+   height: 150px !important;
+   background: center center url('http://wallpapercave.com/wp/Ib27xC1.jpg');
+   
+}
+.card-profile-title {
+   margin-top:auto !important;
+}
+.card-profile-title-img {
+   margin:-80px auto auto auto;
+   width:100px;
+   height:100px;
+}
+.card-profile-content-name {
+   font-weight:bold;
+   text-transform:uppercase;
 }
 
 

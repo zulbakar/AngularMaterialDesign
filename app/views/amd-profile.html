@@ -1,1 +1,132 @@
-<p>This is the profile view. coming soon...</p>
+<span flex></span>
+<div layout="row" layout-xs="column">
+
+    <div flex-gt-sm="33">
+
+        <div flex>
+            <span flex></span>
+            <md-card>
+
+                <md-content style="overflow:hidden;">
+
+                    <md-card class="card-profile">
+
+                        <div class="card-profile-bg-color"></div>
+
+                        <md-card-title class="card-profile-title">
+                            <img ng-src="./app/images/user.png" class="img-circle md-whiteframe-3dp card-profile-title-img" alt="Zul Bakar">
+                        </md-card-title>
+
+                        <md-card-content>
+                            <md-content layout-padding class="md-no-momentum card-profile-content-name">
+                                <center>Zul Bakar</center>
+                            </md-content>
+
+                            <md-divider></md-divider>
+
+                            <center style="padding-top:5px;padding-bottom:5px;">
+
+                                <a class="btn btn-md btn-social-icon btn-facebook">
+                                    <md-tooltip md-direction="top">facebook</md-tooltip>
+                                    <span class="fa fa-facebook"></span>
+                                </a>
+
+                                <a class="btn btn-md btn-social-icon btn-google">
+                                    <md-tooltip md-direction="top">google</md-tooltip>
+                                    <span class="fa fa-google"></span>
+                                </a>
+
+                                <a class="btn btn-md btn-social-icon btn-github">
+                                    <md-tooltip md-direction="top">github</md-tooltip>
+                                    <span class="fa fa-github"></span>
+                                </a>
+
+                                <a class="btn btn-md btn-social-icon btn-twitter">
+                                    <md-tooltip md-direction="top">twitter</md-tooltip>
+                                    <span class="fa fa-twitter"></span>
+                                </a>
+
+                                <a class="btn btn-md btn-social-icon btn-yahoo">
+                                    <md-tooltip md-direction="top">yahoo</md-tooltip>
+                                    <span class="fa fa-yahoo"></span>
+                                </a>
+
+                                <a class="btn btn-md btn-social-icon btn-instagram">
+                                    <md-tooltip md-direction="top">instagram</md-tooltip>
+                                    <span class="fa fa-instagram"></span>
+                                </a>
+
+                            </center>
+
+                            <md-divider></md-divider>
+
+                            <md-list flex>
+                                <md-list-item class="md-3-line md-long-text">
+                                    <div class="md-list-item-text">
+                                        <h3>About Me</h3>
+                                        <p style="text-align:justify;">
+                                            Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper
+                                            vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class
+                                            aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos....
+                                        </p>
+                                    </div>
+                                </md-list-item>
+
+                            </md-list>
+
+                        </md-card-content>
+
+                    </md-card>
+
+                </md-content>
+
+            </md-card>
+        </div>
+
+        <div flex>
+            <span flex></span>
+
+            <md-card>
+
+                <md-list class="md-dense" flex>
+
+                    <md-subheader class="md-no-sticky">Education</md-subheader>
+
+                    <md-divider></md-divider>
+                    <md-list-item class="md-2-line md-long-text">
+                        <md-icon md-font-library="material-icons">library_books</md-icon>
+                        <div class="md-list-item-text"  >
+                            <h3>Degree</h3>
+                            <p style="text-align:justify;">
+                                Secondary line text Lorem ipsum dolor sit amet.s....
+                            </p>
+                        </div>
+                    </md-list-item>
+
+                    <md-divider></md-divider>
+                    <md-list-item class="md-2-line md-long-text">
+                        <md-icon md-font-library="material-icons">library_books</md-icon>
+                        <div class="md-list-item-text"  >
+                            <h3>Diploma</h3>
+                            <p style="text-align:justify;">
+                                Secondary line text Lorem ipsum dolor sit amet.s....
+                            </p>
+                        </div>
+                    </md-list-item>
+
+                </md-list>
+
+                </md-card-content>
+
+            </md-card>
+
+        </div>
+
+    </div>
+
+    <span flex></span>
+
+    <div flex-gt-sm="66">
+        <amd-profile-form></amd-profile-form>
+    </div>
+</div>

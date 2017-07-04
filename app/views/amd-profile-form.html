@@ -1,0 +1,119 @@
+<span flex></span>
+<md-card>
+
+    <md-content>
+
+        <md-toolbar class="md-accent md-whiteframe-1dp" style="height: 30px;border-left:solid 10px #01579b;">
+
+            <div class="md-toolbar-tools">
+
+                <h2 flex md-truncate>Edit Profile</h2>
+
+            </div>
+
+        </md-toolbar>
+
+        <md-content layout-padding>
+
+            <form name="projectForm">
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <md-input-container class="md-block">
+                            <label>Username</label>
+                            <input required name="username" ng-model="project.username">
+                            <div ng-messages="projectForm.username.$error">
+                                <div ng-message="required">This is required.</div>
+                            </div>
+                        </md-input-container>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+                        <md-input-container class="md-block">
+                            <label>Email</label>
+                            <input required type="email" name="email" ng-model="project.email" minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/"
+                            />
+
+                            <div ng-messages="projectForm.email.$error" role="alert">
+                                <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                                    Your email must be between 10 and 100 characters long and look like an e-mail address.
+                                </div>
+                            </div>
+                        </md-input-container>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <md-input-container class="md-block">
+                            <label>First Name</label>
+                            <input required name="firstname" ng-model="project.firstname">
+                            <div ng-messages="projectForm.firstname.$error">
+                                <div ng-message="required">This is required.</div>
+                            </div>
+                        </md-input-container>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+                        <md-input-container class="md-block">
+                            <label>Last Name</label>
+                            <input required name="lastname" ng-model="project.lastname">
+                            <div ng-messages="projectForm.lastname.$error">
+                                <div ng-message="required">This is required.</div>
+                            </div>
+                        </md-input-container>
+
+                    </div>
+                </div>
+
+                <md-input-container class="md-block">
+                    <label>Address</label>
+                    <input required type="email" name="address" ng-model="project.address" minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/"
+                    />
+
+                    <div ng-messages="projectForm.address.$error" role="alert">
+                        <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                            Your email must be between 10 and 100 characters long and look like an e-mail address.
+                        </div>
+                    </div>
+                </md-input-container>
+
+                <md-input-container class="md-block">
+                    <label>Country</label>
+                    <md-select name="country" ng-model="project.country" required>
+                        <md-option value="my">Malaysia</md-option>
+                        <md-option value="sg">Singapore</md-option>
+                    </md-select>
+                </md-input-container>
+
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+
+                        <md-input-container class="md-block">
+                            <label>About Me</label>
+                            <textarea name="aboutme" ng-model="project.aboutme" md-maxlength="150" rows="5" md-select-on-focus></textarea>
+                        </md-input-container>
+
+                        <md-input-container class="md-block">
+                            <md-switch class="md-primary" name="special" ng-model="project.special" required>
+                                Enable special options.
+                            </md-switch>
+                            <div ng-messages="projectForm.special.$error" multiple>
+                                <div ng-message="required">
+                                    You must enable all special options before you can proceed.
+                                </div>
+                            </div>
+                        </md-input-container>
+
+                    </div>
+                </div>
+
+                <div>
+                    <md-button class="md-raised md-accent" type="submit">Submit</md-button>
+                </div>
+            </form>
+        </md-content>
+
+    </md-content>
+
+</md-card>

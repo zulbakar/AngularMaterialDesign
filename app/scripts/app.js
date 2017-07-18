@@ -16,8 +16,7 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngMaterial',
-    'ngMaterialSidemenu'
+    'ngMaterial'
   ])
   .config(function ($routeProvider, $locationProvider, $mdThemingProvider) {
     $routeProvider

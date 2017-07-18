@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc directive
- * @name angularMaterialBoilerplateApp.directive:amdToolbarHeader
+ * @name angularMaterialDesignApp.directive:amdToolbarHeader
  * @description
  * # amdToolbarHeader
  */
-angular.module('angularMaterialBoilerplateApp')
+angular.module('angularMaterialDesignApp')
   .component('amdToolbarHeader', {
     templateUrl: 'views/amd-toolbar-header.html',
     controller: ['$scope', '$timeout', '$mdSidenav', '$log', 

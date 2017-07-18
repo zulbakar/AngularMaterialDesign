@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc directive
- * @name angularMaterialBoilerplateApp.directive:amdLogin
+ * @name angularMaterialDesignApp.directive:amdLogin
  * @description
  * # amdLogin
  */
-angular.module('angularMaterialBoilerplateApp')
+angular.module('angularMaterialDesignApp')
   .component('amdLogin', {
     templateUrl: 'views/amd-login.html',
     controller: ['$log',

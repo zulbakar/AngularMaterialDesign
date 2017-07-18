@@ -3,7 +3,7 @@
 describe('Controller: SidenavMenuCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('angularMaterialBoilerplateApp'));
+  beforeEach(module('angularMaterialDesignApp'));
 
   var SidenavMenuCtrl,
     scope;

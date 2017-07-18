@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name angularMaterialBoilerplateApp
+ * @name angularMaterialDesignApp
  * @description
  * # angularMaterialBoilerplateApp
  *
  * Main module of the application.
  */
 angular
-  .module('angularMaterialBoilerplateApp', [
+  .module('angularMaterialDesignApp', [
     'ngAnimate',
     'ngCookies',
     'ngMessages',
@@ -38,6 +38,9 @@ angular
       })
       .when('/profile', {
         template: '<amd-profile></amd-profile>'
+      })
+      .when('/table', {
+        template: '<amd-table></amd-table>'
       })
       .otherwise({
         redirectTo: '/'

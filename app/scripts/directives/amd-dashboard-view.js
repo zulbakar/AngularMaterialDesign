@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc directive
- * @name angularMaterialBoilerplateApp.directive:amdDashboardView
+ * @name angularMaterialDesignApp.directive:amdDashboardView
  * @description
  * # amdDashboardView
  */
-angular.module('angularMaterialBoilerplateApp')
+angular.module('angularMaterialDesignApp')
   .component('amdDashboardView', {
     templateUrl: 'views/amd-dashboard-view.html',
     controller: ['$log',

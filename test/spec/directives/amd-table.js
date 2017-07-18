@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Directive: amdAbout', function () {
+describe('Directive: amdTable', function () {
 
   // load the directive's module
   beforeEach(module('angularMaterialDesignApp'));
@@ -13,8 +13,8 @@ describe('Directive: amdAbout', function () {
   }));
 
   it('should make hidden element visible', inject(function ($compile) {
-    element = angular.element('<amd-about></amd-about>');
+    element = angular.element('<amd-table></amd-table>');
     element = $compile(element)(scope);
-    expect(element.text()).toBe('this is the amdAbout directive');
+    expect(element.text()).toBe('this is the amdTable directive');
   }));
 });

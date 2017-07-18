@@ -3,7 +3,7 @@
 describe('Directive: amdDashboardView', function () {
 
   // load the directive's module
-  beforeEach(module('angularMaterialBoilerplateApp'));
+  beforeEach(module('angularMaterialDesignApp'));
 
   var element,
     scope;

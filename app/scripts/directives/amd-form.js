@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc directive
- * @name angularMaterialBoilerplateApp.directive:amdForm
+ * @name angularMaterialDesignApp.directive:amdForm
  * @description
  * # amdForm
  */
-angular.module('angularMaterialBoilerplateApp')
+angular.module('angularMaterialDesignApp')
   .component('amdForm', {
     templateUrl: 'views/amd-form.html',
     controller: ['$log',

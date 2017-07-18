@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc directive
- * @name angularMaterialBoilerplateApp.directive:amdAbout
+ * @name angularMaterialDesignApp.directive:amdAbout
  * @description
  * # amdAbout
  */
-angular.module('angularMaterialBoilerplateApp')
+angular.module('angularMaterialDesignApp')
   .component('amdAbout', {
     templateUrl: 'views/amd-about.html',
     controller: ['$log',

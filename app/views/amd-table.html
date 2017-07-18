@@ -1,0 +1,104 @@
+<span flex></span>
+<md-card>
+
+    <md-content>
+
+        <md-toolbar class="md-accent md-whiteframe-1dp" style="height: 30px;border-left:solid 10px #01579b;">
+
+            <div class="md-toolbar-tools">
+                <h2 flex md-truncate>This is the Table view.</h2>
+
+                <md-button class="md-icon-button">
+                    <md-tooltip md-direction="bottom">Refresh</md-tooltip>
+                    <md-icon md-menu-origin md-font-library="material-icons">autorenew</md-icon>
+                </md-button>
+
+                <md-button class="md-icon-button">
+                    <md-tooltip md-direction="bottom">Share</md-tooltip>
+                    <md-icon md-menu-origin md-font-library="material-icons">share</md-icon>
+                </md-button>
+
+            </div>
+
+        </md-toolbar>
+
+        <md-content class="md-padding">
+            <br/>
+
+            <md-list class="md-dense custom-view-mobile">
+
+                <md-divider></md-divider>
+
+                <md-list-item class="md-2-line" ng-click="null">
+                    <md-icon md-menu-origin md-font-library="material-icons" class="md-accent">warning</md-icon>
+                    <div class="md-list-item-text">
+                        <h3>Mark Otto</h3>
+                        <p style="font-size:11px;">@mdo</p>
+                    </div>
+                </md-list-item>
+
+                <md-divider></md-divider>
+
+                <md-list-item class="md-2-line" ng-click="null">
+                    <md-icon md-menu-origin md-font-library="material-icons" class="md-accent">warning</md-icon>
+                    <div class="md-list-item-text">
+                        <h3>Jacob Thornton</h3>
+                        <p style="font-size:11px;">@mdo</p>
+                    </div>
+                </md-list-item>
+
+                <md-divider></md-divider>
+
+                <md-list-item class="md-2-line" ng-click="null">
+                    <md-icon md-menu-origin md-font-library="material-icons" class="md-accent">warning</md-icon>
+                    <div class="md-list-item-text">
+                        <h3>Mark Otto</h3>
+                        <p style="font-size:11px;">@mdo</p>
+                    </div>
+                </md-list-item>
+
+                <md-divider></md-divider>
+
+            </md-list>
+
+            <div class="table-responsive custom-view-desktop">
+
+                <table class="table table-striped table-bordered table-hover table-condensed">
+
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+        </md-content>
+
+    </md-content>
+
+</md-card>

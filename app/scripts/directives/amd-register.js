@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc directive
- * @name angularMaterialBoilerplateApp.directive:amdRegister
+ * @name angularMaterialDesignApp.directive:amdRegister
  * @description
  * # amdRegister
  */
-angular.module('angularMaterialBoilerplateApp')
+angular.module('angularMaterialDesignApp')
   .component('amdRegister',{
     templateUrl: 'views/amd-register.html',
     controller: ['$log',

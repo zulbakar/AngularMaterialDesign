@@ -2,15 +2,15 @@
 
 /**
  * @ngdoc function
- * @name angularMaterialBoilerplateApp.controller:SidenavMenuCtrl
+ * @name angularMaterialDesignApp.controller:SidenavMenuCtrl
  * @description
  * # SidenavMenuCtrl
- * Controller of the angularMaterialBoilerplateApp
+ * Controller of the angularMaterialDesignApp
  */
-angular.module('angularMaterialBoilerplateApp')
+angular.module('angularMaterialDesignApp')
   .controller('SidenavMenuCtrl', ['$mdSidenav', '$log', '$location', function ($mdSidenav, $log, $location) {
     var $ctrl = this;
-    $ctrl.classActive = 'md-primary';
+    $ctrl.classActive = 'active';
     $ctrl.$location = $location;
 
     $ctrl.go = function (path) {

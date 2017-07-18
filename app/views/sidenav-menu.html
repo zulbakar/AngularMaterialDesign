@@ -20,59 +20,82 @@
 
         </md-toolbar>
 
-        <md-content layout-padding class="sidemenu-custom" style="backgorund:red;">
+        <md-content layout-padding class="sidemenu-custom">
 
-            <md-sidemenu locked="true" style="backgorund:red;">
-                <md-sidemenu-group>
-                    <md-subheader class="md-no-sticky">Caption</md-subheader>
-
-                    <md-sidemenu-content md-icon="home" md-heading="Dashboard" md-arrow="true" style="background:transparent;">
-                        <md-button class="md-raised" ng-click="$ctrl.go('/input')" ng-class="{'{{$ctrl.classActive}}':$ctrl.$location.path() === '/'}">Home</md-button>
-                        <md-button class="md-raised" ng-click="$ctrl.go('/form')" ng-class="{'{{$ctrl.classActive}}':$ctrl.$location.path() === '/form'}">Form</md-button>
-                        <md-button class="md-raised" ng-click="$ctrl.go('/about')" ng-class="{'{{$ctrl.classActive}}':$ctrl.$location.path() === '/about'}">About</md-button>
-                    </md-sidemenu-content>
-
-                    <md-sidemenu-content md-icon="image" md-heading="Pages" md-arrow="true">
-                        <md-button class="md-raised" ng-click="$ctrl.go('/pages/login')" ng-class="{'{{$ctrl.classActive}}':$ctrl.$location.path() === '/pages/login'}">Login</md-button>
-                        <md-button class="md-raised" ng-click="$ctrl.go('/pages/register')" ng-class="{'{{$ctrl.classActive}}':$ctrl.$location.path() === '/pages/register'}">Register</md-button>
-                    <md-button class="md-raised" ng-click="$ctrl.go('/profile')" ng-class="{'{{$ctrl.classActive}}':$ctrl.$location.path() === '/profile'}">Profile</md-button>
-                    </md-sidemenu-content>
-
-                    <md-sidemenu-content md-heading="Menu 3" md-arrow="true">
-                        <md-sidemenu-button href="#">Submenu 1</md-sidemenu-button>
-                        <md-sidemenu-button href="#">Submenu 2</md-sidemenu-button>
-                        <md-sidemenu-button href="#">Submenu 3</md-sidemenu-button>
-                    </md-sidemenu-content>
-                </md-sidemenu-group>
-
-                <md-sidemenu-group>
-                    <md-divider></md-divider>
-
-                    <md-subheader class="md-no-sticky">Caption</md-subheader>
-
-                    <md-sidemenu-button href="#">Menu 4</md-sidemenu-button>
-                </md-sidemenu-group>
-
-                <md-sidemenu-group>
-                    <md-divider></md-divider>
-
-                    <md-subheader class="md-no-sticky">Caption</md-subheader>
-                    <md-sidemenu-button href="#">Menu 5</md-sidemenu-button>
-                    <md-sidemenu-button href="#">Menu 6</md-sidemenu-button>
-                </md-sidemenu-group>
-            </md-sidemenu>
+            <ul class="nav">
+                    <li>
+                        <a href="javascript:void(0);" ng-click="$ctrl.go('/input')" ng-class="{'{{$ctrl.classActive}}':$ctrl.$location.path() === '/'}"
+                        >
+                            <i class="material-icons">dashboard</i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a data-toggle="collapse" href="javascript:void(0);#pagesExamples" aria-expanded="false" class="collapsed">
+                            <i class="material-icons">image</i>
+                            <p>Pages
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                        <div class="collapse" id="pagesExamples" aria-expanded="false" style="height: 0px;">
+                            <ul class="nav">
+                                <li>
+                                    <a href="javascript:void(0);" ng-click="$ctrl.go('/pages/login')" ng-class="{'{{$ctrl.classActive}}':$ctrl.$location.path() === '/pages/login'}">Login</a>
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0);" ng-click="$ctrl.go('/pages/register')" ng-class="{'{{$ctrl.classActive}}':$ctrl.$location.path() === '/pages/register'}">Register</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" ng-click="$ctrl.go('/profile')" ng-class="{'{{$ctrl.classActive}}':$ctrl.$location.path() === '/profile'}">Profile</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+            
+                    <!-- <li>
+                        <a data-toggle="collapse" href="javascript:void(0);#tablesExamples">
+                            <i class="material-icons">grid_on</i>
+                            <p>Tables
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                        <div class="collapse" id="tablesExamples">
+                            <ul class="nav">
+                                <li>
+                                    <a href="">Regular Tables</a>
+                                </li>
+                                <li>
+                                    <a href="">Extended Tables</a>
+                                </li>
+                                <li>
+                                    <a href="">DataTables.net</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li> -->
+                    <br/>
+                    <md-divider ></md-divider>
+                    <li>
+                        <a href="javascript:void(0);" ng-click="$ctrl.go('/form')" ng-class="{'{{$ctrl.classActive}}':$ctrl.$location.path() === '/form'}">
+                            <i class="material-icons">content_paste</i>
+                            <p>Form</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" ng-click="$ctrl.go('/about')" ng-class="{'{{$ctrl.classActive}}':$ctrl.$location.path() === '/about'}">
+                            <i class="material-icons">widgets</i>
+                            <p>About</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" ng-click="$ctrl.go('/table')" ng-class="{'{{$ctrl.classActive}}':$ctrl.$location.path() === '/table'}">
+                            <i class="material-icons">grid_on</i>
+                            <p>Tables</p>
+                        </a>
+                    </li>
+                </ul>
 
         </md-content>
-
-        <!--<div style="width:100%;padding:0 5px;height:30px !important;position:absolute;bottom:0;background:rgba(255,255,255,1);z-index:99999;">
-
-            <md-divider></md-divider>
-
-            <span class="md-headline" style="color:rgba(0,0,0,0.7);padding:8px 8px 5px;font-size:13px;margin-left:60px;">
-                                 copyrights (c) 2017
-                            </span>
-
-        </div>-->
 
     </md-sidenav>
 

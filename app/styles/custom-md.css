@@ -363,7 +363,7 @@ color: #FFFFFF;
     -ms-transform: scale(1.2,1.2); /* IE 9 */
     -webkit-transform: scale(1.2,1.2); /* Chrome, Safari, Opera */
     transform: scale(1.2,1.2);
-    text-shadow: 0 0 3px #ffffff;
+    text-shadow: 0 0 8px #757575;
 }
 
 .icon-dashboard-card {

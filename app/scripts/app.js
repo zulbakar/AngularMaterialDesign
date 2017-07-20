@@ -21,7 +21,7 @@ angular
   .config(function ($routeProvider, $locationProvider, $mdThemingProvider) {
     $routeProvider
       .when('/', {
-        template: '<amd-main></amd-main>'
+        template: '<amd-dashboard></amd-dashboard>'
       })
       .when('/about', {
         template: '<amd-about></amd-about>'

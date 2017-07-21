@@ -132,13 +132,13 @@ md-badge{
 .custom-menu-content-notification {
     min-height:310px;
 }
-.custom-notification {
+.custom-menu-content-notification .custom-notification {
    width:270px;
    height:320px;
    margin:-8px 0;
    padding:0;
 }
-.custom-notification-header {
+.custom-menu-content-notification .custom-notification .custom-notification-header {
    width:100%;
    padding:0 5px;
    height:34px !important;
@@ -148,21 +148,21 @@ md-badge{
    z-index:99999; 
    text-align:center;
 }
-.custom-notification-header-text {
+.custom-menu-content-notification .custom-notification .custom-notification-header-text {
    color:rgba(0,0,0,1);
    padding:8px 8px 5px;
    font-size:13px;
    font-weight:bold;
 }
-.custom-notification-content {
+.custom-menu-content-notification .custom-notification .custom-notification-content {
    margin:34px 0 26px 0;
    padding:0;
    position:relative;
 }
-.custom-notification-list {
+.custom-menu-content-notification .custom-notification .custom-notification-list {
    margin-top:-7px;
 }
-.custom-notification-footer {
+.custom-menu-content-notification .custom-notification .custom-notification-footer {
    width:100%;
    padding:0 5px;
    height:34px !important;
@@ -170,7 +170,7 @@ md-badge{
    bottom:0;
    background:rgba(255,255,255,1);
 }
-.custom-notification-footer-text {
+.custom-menu-content-notification .custom-notification .custom-notification-footer .custom-notification-footer-text {
    color:rgba(0,0,0,0.7);
    padding:8px 8px 5px;
    font-size:13px;
@@ -182,25 +182,25 @@ md-badge{
 .custom-menu-content-profile {
     min-height:267px;
 }
-.custom-profile {
+.custom-menu-content-profile .custom-profile {
    width:270px;
    height:250px;
    margin:-8px 0;
    padding:0;
 }
-.custom-profile-bg {
+.custom-menu-content-profile .custom-profile-bg {
    height: 110px !important;
    background-color:#e91e63;
 }
-.custom-profile-title {
+.custom-menu-content-profile .custom-profile .custom-profile-title {
    margin-top:auto !important;
 }
-.custom-profile-title-img {
+.custom-menu-content-profile .custom-profile .custom-profile-title-img {
    margin:-70px auto;
    width:80px;
    height:80px;
 }
-.custom-profile-content-name {
+.custom-menu-content-profile .custom-profile .custom-profile-content-name {
    font-weight:bold;
    text-transform:uppercase;
 }

@@ -41,6 +41,9 @@ angular
       .when('/table', {
         template: '<amd-table></amd-table>'
       })
+      .when('/accordian', {
+        template: '<amd-collapse-accordian></amd-collapse-accordian>'
+      })
       .otherwise({
         redirectTo: '/'
       });

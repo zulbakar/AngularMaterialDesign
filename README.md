@@ -1,6 +1,10 @@
 # Angular Material Design theme
 A boilerplate for Material Design applications using Angular 1.x and Angular Material. This project uses the latest master branch of Angular Material to build the application. using yo generator, grunt as task runner
 
+![Angular Material Design theme](https://zulbakar.github.io/AngularMaterialDesign/images/login.jpg)
+
+![Angular Material Design theme](https://zulbakar.github.io/AngularMaterialDesign/images/register.jpg)
+
 ![Angular Material Design theme](https://zulbakar.github.io/AngularMaterialDesign/images/dashboard.jpg)
 
 ![Angular Material Design theme](https://zulbakar.github.io/AngularMaterialDesign/images/editprofile.jpg)
@@ -8,8 +12,6 @@ A boilerplate for Material Design applications using Angular 1.x and Angular Mat
 ![Angular Material Design theme](https://zulbakar.github.io/AngularMaterialDesign/images/form.jpg)
 
 ![Angular Material Design theme](https://zulbakar.github.io/AngularMaterialDesign/images/form.jpg)
-
-![Angular Material Design theme](https://zulbakar.github.io/AngularMaterialDesign/images/register.jpg)
 
 # Getting Started
 Clone this repository and execute the following commands in a terminal:

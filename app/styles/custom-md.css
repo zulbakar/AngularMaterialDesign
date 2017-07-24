@@ -454,3 +454,22 @@ amd-accordian md-content {
     border-right:solid 1px #01579b;
     border-bottom:solid 1px #01579b;
 }
+
+.sidemenu-footer {
+    text-align:center;
+    margin:auto;
+    font-size:12px;
+    color:#424242;
+    background:#ffffff;
+    position:absolute;
+    bottom:0;
+    padding:3px;
+    width: 320px;
+}
+
+@media only screen and (max-width: 1024px){
+    .sidemenu-footer {
+        width: 100%;
+        border-top:#e0e0e0 solid 1px;
+    }
+}

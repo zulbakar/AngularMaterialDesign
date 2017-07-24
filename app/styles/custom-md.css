@@ -342,6 +342,10 @@ color: #FFFFFF;
 .dashboard-card{
     background: transparent !important;
 }
+.dashboard-card md-grid-list md-grid-tile{
+    font-size: 40px;
+    text-align: center;
+}
 .dashboard-card md-grid-list md-grid-tile figure {
     display: inline-block;
     -webkit-box-align: center;
@@ -384,53 +388,37 @@ color: #FFFFFF;
 }
 
 /** BG COLOR*/
-.bg-purple-darken-4 {
-    background: #4a148c;
-    font-size: 40px;
-    color: #ffffff;
-    text-align: center;
+.bg-purple-darken-4 , .bg-purple-darken-4 i{
+    background: #4a148c !important;
+    color: #ffffff !important;
 }
-.bg-pink-darken-2 {
-    background: #e91e63;
-    font-size: 40px;
-    color: #ffffff;
-    text-align: center;
+.bg-pink-darken-2 , .bg-pink-darken-2 i{
+    background: #e91e63 !important;
+    color: #ffffff !important;
 }
-.bg-deep-purple-darken-2 {
-    background: #512da8;
-    font-size: 40px;
-    color: #ffffff;
-    text-align: center;
+.bg-deep-purple-darken-2 , .bg-deep-purple-darken-2 i{
+    background: #512da8 !important;
+    color: #ffffff !important;
 }
-.bg-light-blue-darken-4 {
-    background: #01579b;
-    font-size: 40px;
-    color: #ffffff;
-    text-align: center;
+.bg-light-blue-darken-4 , .bg-light-blue-darken-4 i{
+    background: #01579b !important;
+    color: #ffffff !important;
 }
-.bg-green-darken-2 {
-    background: #388e3c;
-    font-size: 40px;
-    color: #ffffff;
-    text-align: center;
+.bg-green-darken-2 , .bg-green-darken-2 i{
+    background: #388e3c !important;
+    color: #ffffff !important;
 }
-.bg-orange-darken-4 {
-    background: #e65100;
-    font-size: 40px;
-    color: #ffffff;
-    text-align: center;
+.bg-orange-darken-4 , .bg-orange-darken-4 i{
+    background: #e65100 !important;
+    color: #ffffff !important;
 }
-.bg-red-accent-4 {
-    background: #d50000;
-    font-size: 40px;
-    color: #ffffff;
-    text-align: center;
+.bg-red-accent-4 , .bg-red-accent-4 i{
+    background: #d50000 !important;
+    color: #ffffff !important;
 }
-.bg-yellow-accent-2 {
-    background: #fbc02d ;
-    font-size: 40px;
-    color: #ffffff;
-    text-align: center;
+.bg-yellow-accent-2 , .bg-yellow-accent-2 i{
+    background: #fbc02d !important;
+    color: #ffffff !important;
 }
 
 /*ACCORDIAN*/

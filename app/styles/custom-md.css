@@ -346,6 +346,12 @@ color: #FFFFFF;
     font-size: 40px;
     text-align: center;
 }
+.dashboard-card md-grid-list md-grid-tile md-grid-tile-footer{
+    justify-content: center;
+}
+.dashboard-card md-grid-list md-grid-tile md-grid-tile-footer h4 a{
+    color: #ffffff;
+}
 .dashboard-card md-grid-list md-grid-tile figure {
     display: inline-block;
     -webkit-box-align: center;

@@ -10,7 +10,7 @@
 angular.module('angularMaterialDesignApp')
   .controller('SidenavMenuCtrl', ['$mdSidenav', '$log', '$location', function ($mdSidenav, $log, $location) {
     var $ctrl = this;
-    $ctrl.classActive = 'active';
+    $ctrl.classActive = 'active md-whiteframe-8dp';
     $ctrl.$location = $location;
 
     $ctrl.go = function (path) {

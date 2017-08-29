@@ -69,4 +69,11 @@ angular
     $mdThemingProvider.theme('altTheme')
       .primaryPalette('primaryColorMap')
       .accentPalette('accentsColorMap');
+
+    // Enable browser color
+    $mdThemingProvider.enableBrowserColor({
+      theme: 'altTheme', // Default is 'default'
+      palette: 'primary', // Default is 'primary', any basic material palette and extended palettes are available
+      hue: '500' // Default is '800'
+    });
   });

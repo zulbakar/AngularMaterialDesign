@@ -491,3 +491,48 @@ amd-accordian md-content {
     width: 100%;
     border-top:#e0e0e0 solid 1px;
 }
+
+.overlay-loading {
+    position: absolute;
+    /* Sit on top of the page content */
+    display: block;
+    /* Hidden by default */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Black background with opacity */
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+    /*cursor: pointer;  Add a pointer on hover */
+}
+
+/*Rules for loading progress*/
+.loading-progress {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    z-index: 99999;
+}
+
+/*Rules for loading progress text*/
+.loading-progress-text {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    font-size: 14px;
+    color: #757575;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    z-index: 99999;
+    text-align: center;
+}

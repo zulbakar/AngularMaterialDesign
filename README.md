@@ -37,3 +37,5 @@ change **bold** text
 >       'A200': '**#e91e63**'
 >     });
 
+### angular material theme in mobile : download apk
+> download .apk : https://github.com/zulbakar/AngularMaterialDesign/blob/master/docs/AngularMaterialDesign.apk
